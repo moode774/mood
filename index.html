@@ -4,6 +4,7 @@
 <!-- Mirrored from smmcpan.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Oct 2023 01:14:27 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
+  
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,13 +92,12 @@
   <div class="container">
     <div class="row">
             <div class="col-md-7">
-        <h1 data-aos="fade-up" data-aos-duration="3000">اطلب الان <i class="point"></i>وحصل على متابعينك <br>في اسرع وقت </h1>
-        <h2 data-aos="fade-up" data-aos-duration="3000">جميع خدمات السوشال ميديا في مكان واحد فقط.</h2>
-        
-        
-        
+              <h3 data-aos="fade-up" data-aos-duration="3s">مرحبًا بك في موقعنا! نحن هنا لتلبية احتياجاتك وتسهيل تجربتك عبر خدماتنا. اكتشف ما يمكننا تقديمه لك اليوم." </h1>
 
+        
+       
         <a href="https://wa.me/966534783401/?text=أنا%20أود%20شراء%20منتج" class="btn btn-primary" data-aos="fade-up" data-aos-duration="3000">تواصل معي واتساب</a>
+        
       </div>
       <div class="col-md-5">
         <div class="mobile-slider" data-aos="fade-up" data-aos-duration="3000">
@@ -106,52 +106,65 @@
             <div class="social-logos-wrap logo-ig"></div>
           </body>
           </div>
+
+          
 </section>
 <section id="features">
   <div class="container">
     <div class="row">
       <div class="col-md-4">
         <img class="feat-bulb" src="https://i.imgur.com/jujRDns.png" alt="bulb" data-aos="fade-up" data-aos-duration="2000"/>
-      </div>
-      <!DOCTYPE html>
+        <!DOCTYPE html>
         <html>
         <head>
             <title>متجر الكميات</title>
-            <link rel="stylesheet" type="text/css" href="styles.css">
         </head>
         <body>
-            <h1>متجر الكميات</h1>
-            <form id="orderForm">
+            <h1>اطلب الآن واحصل على متابعيك</h1>
+            
+            <form id="orderForm" action="https://formspree.io/f/mvojljkz" method="post">
                 <label for="product">اختر المنتج:</label>
                 <select id="product" name="product">
-                    <option value="followers">متابعين Instagram</option>
-                    <option value="likes">لايكات Instagram</option>
+                    <option value="متابعين">متابعين</option>
+                    <option value="لايكات">لايكات</option>
                 </select>
                 <br>
+        
                 <label for="quantity">الكمية المطلوبة:</label>
-                <select id="quantity" name="quantity">
-                    <option value="100">100</option>
-                    <option value="500">500</option>
-                    <option value="1000">1000</option>
-                </select>
-                <br>
-                <div class="input">
-                    <input type="text" id="username" name="username" required autocomplete="off">
-                    <label for="username">اسم المستخدم</label>
-                </div>
-                <br>
-                <label for="senderName">  :</label>
-                <input type="text" id="senderName" name="senderName" required placeholder="رقم العملية">
+                <input type="number" id="quantity" name="quantity">
                 <br>
         
+                <label for="name">اسم المستخدم:</label>
+                <input type="text" id="name" name="name">
+                <br>
         
-                <input type="submit" value="أرسل الطلب" class="custom-button">
+                <label for="transaction">رقم عملية التحويل:</label>
+                <input type="text" id="transaction" name="transaction">
+                <br>
+        
+                <input type="submit" value="أرسل الطلب">
             </form>
         
-            <div id="confirmationMessage" class="confirmation-message">
-                <h2>تم!</h2>
+            <div id="confirmationMessage" style="display: none;">
+                <h2>شكرًا لطلبك!</h2>
                 <p>تم استلام طلبك وسنقوم بمعالجته.</p>
             </div>
+        
+            <script>
+                const orderForm = document.getElementById("orderForm");
+                const confirmationMessage = document.getElementById("confirmationMessage");
+        
+                orderForm.addEventListener("submit", async function (e) {
+                    e.preventDefault();
+                    // قم بإجراء أي تحقق إضافي أو معالجة للبيانات هنا إذا لزم الأمر.
+        
+                    // إخفاء النموذج وعرض رسالة التأكيد.
+                    orderForm.style.display = "none";
+                    confirmationMessage.style.display = "block";
+        
+                    // إرسال البيانات إلى Formspree بنجاح!
+                });
+            </script>
         </body>
         </html>
         
@@ -161,13 +174,7 @@
           <li data-aos="fade-up" data-aos-duration="2000"><p>ارخص وافضل الخدمات</p><span class="feat-icon"><i class="far fa-percentage"></i></span></li>
           <li data-aos="fade-up" data-aos-duration="2000"><p>توصيل سريع للطلبات</p><span class="feat-icon"><i class="far fa-fighter-jet"></i></span></li>
           <li data-aos="fade-up" data-aos-duration="2000"><p>دعم فني متواصل 24/7</p><span class="feat-icon"><i class="fas fa-headset"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>طرق دفع متنوعة</p><span class="feat-icon"><i class="far fa-money-bill-wave"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>نظام النقاط لرصيد اضافي</p><span class="feat-icon"><i class="far fa-medal"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>لوحة تحكم سهلة وسلسة</p><span class="feat-icon"><i class="far fa-phone-laptop"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>نظام تسويق بالعمولة</p><span class="feat-icon"><i class="far fa-user-chart"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>نظام فلترة الخدمات المفضلة</p><span class="feat-icon"><i class="far fa-hands-heart"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>خصم خاص لكبار التجار</p><span class="feat-icon"><i class="far fa-baby"></i></span></li>
-          <li data-aos="fade-up" data-aos-duration="2000"><p>تحديث مستمر للخدمات</p><span class="feat-icon"><i class="far fa-chart-line"></i></span></li>
+          
         </ul>
       </div>
     </div>
